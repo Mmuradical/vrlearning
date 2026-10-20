@@ -77,8 +77,7 @@ export default function PricingPage() {
             </div>
 
             <div className="text-center md:text-left">
-              <p className="text-sm font-semibold md:text-[11px]">Pricing</p>
-              <h1 className="font-display mt-3 text-3xl font-bold leading-tight tracking-wide text-[#0b1220] md:text-4xl">
+               <h1 className="font-display mt-3 text-3xl font-bold leading-tight tracking-wide text-[#0b1220] md:text-4xl">
                 Big Adventures.
                 <br />
                 Smaller Price Tag.
@@ -111,7 +110,7 @@ export default function PricingPage() {
                 <p className="font-display text-sm font-semibold">Students</p>
                 <p className="mt-4 flex items-baseline justify-center gap-1">
                   <span className="relative font-display text-3xl font-bold text-[#1a85a0]">
-                    <sup className="absolute -left-2 top-0 text-xs">$</sup>
+                    <sup className="absolute -left-3 top-0 text-xs">$</sup>
                     {p.price}
                   </span>
                   <span className="text-xs font-medium">{p.unit}</span>

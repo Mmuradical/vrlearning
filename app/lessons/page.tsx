@@ -112,7 +112,7 @@ const lessons: Lesson[] = [
     subtitle: "Modelling the Atom",
     description:
       "Shrink down to the atomic scale to explore how matter is structured and how different models help us understand atoms and molecules.",
-    grades: "9 & 10",
+    grades: "9 - 10",
     image: "/lesson4.png",
     imageAlt: "Atom model",
     imageSide: "left",
@@ -221,12 +221,12 @@ export default function LessonsPage() {
             className="-z-10 object-cover opacity-40"
             sizes="100vw"
           />
-          <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/40 to-black/70" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/30 to-black/70" />
 
-          <h1 className="font-display text-3xl font-extrabold tracking-wide md:text-3xl">
+          <h1 className="font-display text-3xl font-extrabold tracking-wide md:text-4xl font-medium">
             Learning You Can Step Into
           </h1>
-          <p className="mx-auto mt-5 max-w-[600px] text-sm leading-6 text-gray-200 md:text-[12px] md:leading-5 font-[family-name:Verdana]">
+          <p className="mx-auto mt-5 max-w-[600px] text-sm leading-6 text-gray-200 md:text-[12px] md:leading-5 font-[family-name:Lexend Exa]">
             Immersive VR lessons that help students explore complex concepts
             through experience - from planetary science to atomic structure.
           </p>

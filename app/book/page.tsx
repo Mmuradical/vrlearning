@@ -77,7 +77,7 @@ const contacts = [
   {
     title: "Instagram",
     value: "vr_learning",
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/vr_learn?utm_source=ig_web_button_share_sheet&psln=ZDNlZDc0MzIxNw==",
     icon: (
       <path d="M6 9v9M6 6v.01M10 18v-9M10 13c0-2 1.5-4 4-4s4 1.5 4 4v5" />
     ),
@@ -85,7 +85,7 @@ const contacts = [
   {
     title: "Address",
     value: "Toronto, Ontario",
-    href: "/contact",
+    href: "https://www.google.com/maps/place/Toronto,+ON,+Canada/@43.6534817,-79.3839347,12z/data=!3m1!4b1!4m6!3m5!1s0x882b34d2f8c9e6f5:0x2a3e6f8c9e6f5!8m2!3d43.6534817!4d-79.3839347!16zL20vMGNwZQ?entry=ttu",
     icon: (
       <>
         <path d="M12 21s-6-5.2-6-10a6 6 0 1112 0c0 4.8-6 10-6 10z" />

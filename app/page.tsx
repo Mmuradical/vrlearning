@@ -19,12 +19,12 @@ const stats = [
   },
   {
     tag: "Engage",
-    title: "3.9x more engaging",
+    title: <>3.9x more <br/> engaging</>,
     text: "Learners stay more connected with topics when they can directly engage with them.",
   },
   {
     tag: "Hands-on Tasks",
-    title: "83% of those trained in VR",
+    title: <>83% of those<br />trained in VR</>,
     text: "could immediately carry out real surgery with minimal guidance. Compared to 0% of those traditionally trained.",
   },
 ];
@@ -254,7 +254,7 @@ export default function Home() {
             <h2 className="font-display text-xl font-extrabold md:text-2xl">
               Kids Learn Better in VR
             </h2>
-            <p className="mx-auto mt-4 max-w-md text-sm leading-6 md:text-[10px] md:leading-5 font-[family-name:Verdana]">
+            <p className="mx-auto mt-4 max-w-md text-sm leading-6 md:text-[10px] md:leading-5 font-[family-name:Krona One]">
               VR gives students the chance to experience complex topics
               firsthand, making learning more engaging, understandable, and
               memorable.
@@ -299,7 +299,7 @@ export default function Home() {
                 Go Further for a Fraction
               </h3>
 
-              <p className="mt-3 max-w-[300px] text-sm leading-5 text-gray-100 md:max-w-[260px] md:text-[10px] md:leading-4">
+              <p className="mt-3 max-w-[500px] text-sm leading-5 text-gray-100 md:max-w-[370px] md:text-[10px] md:leading-4">
                 VR gives students access to places they could never reach on a
                 traditional field trip for a fraction of the cost.
               </p>

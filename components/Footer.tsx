@@ -22,7 +22,7 @@ const footerColumns = [
   {
     title: "Contact",
     links: [
-      { label: "info@vrlearning", href: "/" },
+      { label: "info@vrlearning.ca", href: "/" },
       { label: "Book Now", href: "/" },
     ],
   },
