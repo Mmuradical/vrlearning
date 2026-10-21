@@ -77,7 +77,10 @@ export default function PricingPage() {
             </div>
 
             <div className="text-center md:text-left">
-               <h1 className="font-display mt-3 text-3xl font-bold leading-tight tracking-wide text-[#0b1220] md:text-4xl">
+              <p className="font-display text-sm font-medium text-[#0b1220] md:text-[11px]">
+                Pricing
+              </p>
+              <h1 className="font-display mt-3 text-3xl font-bold leading-tight tracking-wide text-[#0b1220] md:text-4xl">
                 Big Adventures.
                 <br />
                 Smaller Price Tag.
