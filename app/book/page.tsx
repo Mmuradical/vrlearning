@@ -23,21 +23,21 @@ const lessons = [
     title: "Space Exploration:",
     subtitle: "Characteristics of Celestial Bodies",
     grades: "6-9",
-    image: "/lesson2.png",
+    image: "/Lesson2.png",
   },
   {
     id: "particle-model",
     title: "Atoms & Molecules:",
     subtitle: "The Particle Model of Matter",
     grades: "5-7",
-    image: "/lesson3.png",
+    image: "/Lesson3.png",
   },
   {
     id: "modelling-the-atom",
     title: "Atoms & Molecules:",
     subtitle: "Modelling the Atom",
     grades: "9-10",
-    image: "/lesson4.png",
+    image: "/Lesson4.png",
   },
 ];
 
@@ -51,7 +51,7 @@ const stepInfo = [
 const PANEL_TEXT =
   "Immersive VR lessons that bring complex concepts to life, from planets to atoms.";
 
-const BOOKING_EMAIL = "mdadashev13@gmail.com";
+const BOOKING_EMAIL = "info@vrlearning.ca";
 
 const contacts = [
   {

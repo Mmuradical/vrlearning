@@ -95,7 +95,7 @@ const lessons: Lesson[] = [
     description:
       "Explore the planets and moons of our solar system, comparing their unique characteristics and discovering what makes Earth different.",
     grades: "6-9",
-    image: "/lesson2.png",
+    image: "/Lesson2.png",
     imageAlt: "Earth, the Sun and a planet",
     imageSide: "right",
     activities: [
@@ -159,7 +159,7 @@ const lessons: Lesson[] = [
     description:
       "Go beyond the microscopic level to explore how particles behave and how the particle model helps explain the properties of different substances.",
     grades: "5-7",
-    image: "/lesson3.png",
+    image: "/Lesson3.png",
     imageAlt: "Colorful molecule model",
     imageSide: "right",
     activities: [
@@ -206,7 +206,7 @@ const lessons: Lesson[] = [
     description:
       "Shrink down to the atomic scale to explore how matter is structured and how different models help us understand atoms and molecules.",
     grades: "9 - 10",
-    image: "/lesson4.png",
+    image: "/Lesson4.png",
     imageAlt: "Atom model",
     imageSide: "left",
     activities: [
