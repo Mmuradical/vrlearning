@@ -1,9 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-
-
 
 const navLinks = [
   { label: "Lessons", href: "/lessons" },
@@ -11,10 +8,18 @@ const navLinks = [
   { label: "Articles", href: "/articles" },
 ];
 
-const plans = [
-  { range: "1 - 50", price: "1395", unit: "/Total" },
-  { range: "51 - 90", price: "28", unit: "/Student" },
-  { range: "91+", price: "24", unit: "/Student" },
+type Plan = {
+  top: string;
+  bottom: string;
+  price?: string; // omitted = Free
+  unit?: string;
+};
+
+const plans: Plan[] = [
+  { top: "Educator", bottom: "Demo" }, // Free, no button
+  { top: "1 - 50", bottom: "Students", price: "1395", unit: "/Total" },
+  { top: "51 - 90", bottom: "Students", price: "28", unit: "/Student" },
+  { top: "91+", bottom: "Students", price: "24", unit: "/Student" },
 ];
 
 const footerColumns = [
@@ -23,7 +28,7 @@ const footerColumns = [
     links: [
       { label: "Tapvigo", href: "https://tapvigo.com" },
       { label: "TapEducation", href: "https://tapeducation.com" },
-      { label: "Pop-Up VR", href: "https://popupvr.com" },
+      { label: "Pop-Up VR", href: "https://popupvr.ca" },
       { label: "VR Core Education", href: "https://vrcoreeducation.com" },
     ],
   },
@@ -44,16 +49,11 @@ const footerColumns = [
 ];
 
 function Navbar() {
-  return (
-       <Header />
-  );
+  return <Header />;
 }
 
 function SiteFooter() {
-  return (
-     <Footer/>
-
-  );
+  return <Footer />;
 }
 
 export default function PricingPage() {
@@ -93,7 +93,7 @@ export default function PricingPage() {
                 href="/book"
                 className="mt-6 inline-block rounded bg-[#02304f] px-8 py-3 text-sm font-semibold text-white transition hover:bg-[#04243b] md:py-2 md:text-[11px]"
               >
-                Get Started
+                Book Now
               </a>
             </div>
           </div>
@@ -104,36 +104,30 @@ export default function PricingPage() {
           <div className="mx-auto grid max-w-4xl grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
             {plans.map((p) => (
               <div
-                key={p.range}
+                key={p.top}
                 className="flex h-44 flex-col items-center justify-center rounded-xl border border-[#02304f] bg-white text-center md:h-48"
               >
                 <p className="font-display text-xl font-bold leading-none">
-                  {p.range}
+                  {p.top}
                 </p>
-                <p className="font-display text-sm font-semibold">Students</p>
+                <p className="font-display text-sm font-semibold">{p.bottom}</p>
                 <p className="mt-4 flex items-baseline justify-center gap-1">
-                  <span className="relative font-display text-3xl font-bold text-[#1a85a0]">
-                    <sup className="absolute -left-3 top-0 text-xs">$</sup>
-                    {p.price}
-                  </span>
-                  <span className="text-xs font-medium">{p.unit}</span>
+                  {p.price ? (
+                    <>
+                      <span className="relative font-display text-3xl font-bold text-[#1a85a0]">
+                        <sup className="absolute -left-3 top-0 text-xs">$</sup>
+                        {p.price}
+                      </span>
+                      <span className="text-xs font-medium">{p.unit}</span>
+                    </>
+                  ) : (
+                    <span className="font-display text-3xl font-bold text-[#1a85a0]">
+                      Free
+                    </span>
+                  )}
                 </p>
               </div>
             ))}
-
-            {/* Residencies */}
-            <div className="flex min-h-44 flex-col items-center justify-center rounded-xl border border-[#02304f] bg-white px-4 py-4 text-center md:h-48">
-              <p className="font-display text-base font-bold">Residencies</p>
-              <p className="mt-3 text-xs leading-4 md:text-[9px] md:leading-3">
-                A long-term, temporary educational Vr installation
-              </p>
-              <a
-                href="/book#contact"
-                className="mt-4 w-full rounded bg-[#1a85a0] py-2 text-xs font-semibold text-white transition hover:bg-[#156d84] md:py-1.5 md:text-[10px]"
-              >
-                Contact Us
-              </a>
-            </div>
           </div>
         </section>
       </main>

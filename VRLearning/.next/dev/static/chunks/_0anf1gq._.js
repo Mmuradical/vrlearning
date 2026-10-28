@@ -25,7 +25,7 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
         id: "iss",
         title: "ISS:",
         subtitle: "Curiosity in Orbit",
-        grades: "4-12",
+        grades: "3-12",
         image: "/Lesson1.png"
     },
     {
@@ -39,7 +39,7 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
         id: "particle-model",
         title: "Atoms & Molecules:",
         subtitle: "The Particle Model of Matter",
-        grades: "5-7",
+        grades: "5-8",
         image: "/Lesson3.png"
     },
     {
@@ -66,62 +66,6 @@ const stepInfo = [
 ];
 const PANEL_TEXT = "Immersive VR lessons that bring complex concepts to life, from planets to atoms.";
 const BOOKING_EMAIL = "info@vrlearning.ca";
-const contacts = [
-    {
-        title: "Message Us",
-        value: "info@vrlearning.ca",
-        href: "mailto:info@vrlearning.ca",
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-            d: "M4 6h16v12H4zM4 7l8 6 8-6",
-            strokeLinejoin: "round"
-        }, void 0, false, {
-            fileName: "[project]/app/book/page.tsx",
-            lineNumber: 62,
-            columnNumber: 7
-        }, ("TURBOPACK compile-time value", void 0))
-    },
-    {
-        title: "Instagram",
-        value: "vr_learn",
-        href: "https://www.instagram.com/vr_learn",
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-            d: "M6 9v9M6 6v.01M10 18v-9M10 13c0-2 1.5-4 4-4s4 1.5 4 4v5"
-        }, void 0, false, {
-            fileName: "[project]/app/book/page.tsx",
-            lineNumber: 73,
-            columnNumber: 7
-        }, ("TURBOPACK compile-time value", void 0))
-    },
-    {
-        title: "Address",
-        value: "Toronto, Ontario",
-        href: "https://www.google.com/maps/place/Toronto,+ON,+Canada",
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                    d: "M12 21s-6-5.2-6-10a6 6 0 1112 0c0 4.8-6 10-6 10z"
-                }, void 0, false, {
-                    fileName: "[project]/app/book/page.tsx",
-                    lineNumber: 82,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                    cx: "12",
-                    cy: "11",
-                    r: "2"
-                }, void 0, false, {
-                    fileName: "[project]/app/book/page.tsx",
-                    lineNumber: 83,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true, {
-            fileName: "[project]/app/book/page.tsx",
-            lineNumber: 81,
-            columnNumber: 7
-        }, ("TURBOPACK compile-time value", void 0))
-    }
-];
 const WEEKDAYS = [
     "Mo",
     "Tu",
@@ -154,7 +98,7 @@ function OutlineButton({ children, onClick }) {
         children: children
     }, void 0, false, {
         fileName: "[project]/app/book/page.tsx",
-        lineNumber: 121,
+        lineNumber: 88,
         columnNumber: 5
     }, this);
 }
@@ -168,7 +112,7 @@ function PrimaryButton({ children, onClick, disabled }) {
         children: children
     }, void 0, false, {
         fileName: "[project]/app/book/page.tsx",
-        lineNumber: 141,
+        lineNumber: 108,
         columnNumber: 5
     }, this);
 }
@@ -182,7 +126,7 @@ function SidePanel({ step }) {
                 children: stepInfo[step].title
             }, void 0, false, {
                 fileName: "[project]/app/book/page.tsx",
-                lineNumber: 155,
+                lineNumber: 122,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -190,7 +134,7 @@ function SidePanel({ step }) {
                 children: PANEL_TEXT
             }, void 0, false, {
                 fileName: "[project]/app/book/page.tsx",
-                lineNumber: 159,
+                lineNumber: 126,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ol", {
@@ -205,30 +149,30 @@ function SidePanel({ step }) {
                         children: i + 1
                     }, s.title, false, {
                         fileName: "[project]/app/book/page.tsx",
-                        lineNumber: 172,
+                        lineNumber: 139,
                         columnNumber: 13
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/app/book/page.tsx",
-                lineNumber: 163,
+                lineNumber: 130,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 src: "/footer1.png",
                 alt: "VR Learning",
-                width: 64,
-                height: 60,
-                className: "absolute bottom-[16%] right-4 h-auto w-16 mr-[10px]"
+                width: 72,
+                height: 68,
+                className: "absolute bottom-5 right-5 h-auto w-[72px]"
             }, void 0, false, {
                 fileName: "[project]/app/book/page.tsx",
-                lineNumber: 188,
+                lineNumber: 155,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/book/page.tsx",
-        lineNumber: 154,
+        lineNumber: 121,
         columnNumber: 5
     }, this);
 }
@@ -249,10 +193,10 @@ _c2 = SidePanel;
                         onToggle(l.id);
                     }
                 },
-                className: `cursor-pointer overflow-hidden rounded-[10px] border bg-white shadow-[0_2px_6px_rgba(0,0,0,0.18)] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#1a85a0] ${active ? "border-[#0b1220]" : "border-gray-300"}`,
+                className: `flex h-full cursor-pointer flex-col overflow-hidden rounded-[10px] border bg-white shadow-[0_2px_6px_rgba(0,0,0,0.18)] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#1a85a0] ${active ? "border-[#0b1220]" : "border-gray-300"}`,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative h-[84px] w-full md:h-[100px]",
+                        className: "relative h-[84px] w-full shrink-0 md:h-[100px]",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 src: l.image,
@@ -262,7 +206,7 @@ _c2 = SidePanel;
                                 sizes: "(min-width: 768px) 190px, 45vw"
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.tsx",
-                                lineNumber: 234,
+                                lineNumber: 201,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -281,27 +225,27 @@ _c2 = SidePanel;
                                         d: "M5 12l5 5 9-10"
                                     }, void 0, false, {
                                         fileName: "[project]/app/book/page.tsx",
-                                        lineNumber: 261,
+                                        lineNumber: 228,
                                         columnNumber: 21
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/book/page.tsx",
-                                    lineNumber: 251,
+                                    lineNumber: 218,
                                     columnNumber: 19
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.tsx",
-                                lineNumber: 242,
+                                lineNumber: 209,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/book/page.tsx",
-                        lineNumber: 233,
+                        lineNumber: 200,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "font-display px-2 pb-2.5 pt-2 text-center",
+                        className: "font-display flex flex-1 flex-col items-center justify-center px-2 pb-2.5 pt-2 text-center",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: `text-[10px] leading-[15px] md:text-[11px] ${active ? "text-black" : "text-[#6b7280]"}`,
@@ -311,7 +255,7 @@ _c2 = SidePanel;
                                         children: l.title
                                     }, void 0, false, {
                                         fileName: "[project]/app/book/page.tsx",
-                                        lineNumber: 274,
+                                        lineNumber: 241,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -319,13 +263,13 @@ _c2 = SidePanel;
                                         children: l.subtitle
                                     }, void 0, false, {
                                         fileName: "[project]/app/book/page.tsx",
-                                        lineNumber: 275,
+                                        lineNumber: 242,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/book/page.tsx",
-                                lineNumber: 269,
+                                lineNumber: 236,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -338,41 +282,41 @@ _c2 = SidePanel;
                                         children: l.grades
                                     }, void 0, false, {
                                         fileName: "[project]/app/book/page.tsx",
-                                        lineNumber: 284,
+                                        lineNumber: 251,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/book/page.tsx",
-                                lineNumber: 278,
+                                lineNumber: 245,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/book/page.tsx",
-                        lineNumber: 268,
+                        lineNumber: 235,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         href: "/lessons",
                         onClick: (e)=>e.stopPropagation(),
-                        className: `font-display block py-2 text-center text-[10px] font-bold text-white md:text-[11px] ${active ? "bg-[#111827]" : "bg-[#9ca3af]"}`,
+                        className: `font-display mt-auto block shrink-0 py-2 text-center text-[10px] font-bold text-white md:text-[11px] ${active ? "bg-[#111827]" : "bg-[#9ca3af]"}`,
                         children: "Read more"
                     }, void 0, false, {
                         fileName: "[project]/app/book/page.tsx",
-                        lineNumber: 289,
+                        lineNumber: 256,
                         columnNumber: 13
                     }, this)
                 ]
             }, l.id, true, {
                 fileName: "[project]/app/book/page.tsx",
-                lineNumber: 216,
+                lineNumber: 183,
                 columnNumber: 11
             }, this);
         })
     }, void 0, false, {
         fileName: "[project]/app/book/page.tsx",
-        lineNumber: 211,
+        lineNumber: 178,
         columnNumber: 5
     }, this);
 }
@@ -383,6 +327,30 @@ _c3 = LessonStep;
 function toKey(d) {
     return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 }
+/* chevron arrows drawn as SVG so they don't depend on the font */ function Chevron({ direction }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        "aria-hidden": "true",
+        viewBox: "0 0 24 24",
+        className: "h-3.5 w-3.5",
+        fill: "none",
+        stroke: "currentColor",
+        strokeWidth: "3",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
+            points: direction === "left" ? "15 5 8 12 15 19" : "9 5 16 12 9 19"
+        }, void 0, false, {
+            fileName: "[project]/app/book/page.tsx",
+            lineNumber: 300,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/app/book/page.tsx",
+        lineNumber: 290,
+        columnNumber: 5
+    }, this);
+}
+_c4 = Chevron;
 function Calendar({ value, onChange }) {
     _s();
     const today = startOfDay(new Date());
@@ -414,25 +382,31 @@ function Calendar({ value, onChange }) {
     }
     const canGoPrev = year > today.getFullYear() || year === today.getFullYear() && month > today.getMonth();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "mx-auto max-w-[260px]",
+        className: "mx-auto w-full max-w-[320px]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-center justify-between rounded-md border border-gray-100 px-2 py-1 shadow-sm",
+                className: "flex items-center justify-between rounded-md border border-gray-100 px-2.5 py-1.5 shadow-sm",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         type: "button",
                         "aria-label": "Previous month",
                         disabled: !canGoPrev,
                         onClick: ()=>setView(new Date(year, month - 1, 1)),
-                        className: "flex h-5 w-5 items-center justify-center rounded border border-gray-200 text-gray-500 disabled:opacity-30",
-                        children: "‹"
+                        className: "flex h-7 w-7 items-center justify-center rounded border border-gray-200 text-gray-500 transition hover:bg-gray-50 disabled:opacity-30 disabled:hover:bg-transparent",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Chevron, {
+                            direction: "left"
+                        }, void 0, false, {
+                            fileName: "[project]/app/book/page.tsx",
+                            lineNumber: 368,
+                            columnNumber: 11
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/book/page.tsx",
-                        lineNumber: 374,
+                        lineNumber: 361,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "text-[10px] font-semibold text-gray-600",
+                        className: "text-xs font-semibold text-gray-600",
                         children: [
                             MONTHS[month],
                             " ",
@@ -440,70 +414,77 @@ function Calendar({ value, onChange }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/book/page.tsx",
-                        lineNumber: 384,
+                        lineNumber: 371,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         type: "button",
                         "aria-label": "Next month",
                         onClick: ()=>setView(new Date(year, month + 1, 1)),
-                        className: "flex h-5 w-5 items-center justify-center rounded border border-gray-200 text-gray-500",
-                        children: "›"
+                        className: "flex h-7 w-7 items-center justify-center rounded border border-gray-200 text-gray-500 transition hover:bg-gray-50",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Chevron, {
+                            direction: "right"
+                        }, void 0, false, {
+                            fileName: "[project]/app/book/page.tsx",
+                            lineNumber: 381,
+                            columnNumber: 11
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/book/page.tsx",
-                        lineNumber: 388,
+                        lineNumber: 375,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/book/page.tsx",
-                lineNumber: 373,
+                lineNumber: 360,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-3 grid grid-cols-7 gap-y-1 text-center text-[9px]",
+                className: "mt-4 grid grid-cols-7 gap-y-1.5 text-center text-[10px]",
                 children: [
                     WEEKDAYS.map((w)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "py-1 font-semibold text-gray-400",
+                            className: "py-1 text-[11px] font-semibold text-gray-400",
                             children: w
                         }, w, false, {
                             fileName: "[project]/app/book/page.tsx",
-                            lineNumber: 400,
+                            lineNumber: 387,
                             columnNumber: 11
                         }, this)),
                     cells.map(({ date, current })=>{
                         const key = toKey(date);
                         const past = date < today;
-                        const isSelected = value === key;
-                        const isToday = toKey(today) === key;
+                        // highlight only days of the month being shown
+                        const isSelected = current && value === key;
+                        const isToday = current && toKey(today) === key;
                         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             type: "button",
                             disabled: past || !current,
                             onClick: ()=>onChange(key),
                             "aria-pressed": isSelected,
-                            className: `mx-auto flex h-6 w-6 items-center justify-center rounded text-[10px] transition ${isSelected ? "bg-[#1a85a0] font-bold text-white" : isToday ? "border border-indigo-400 text-[#0b1220]" : current && !past ? "text-[#0b1220] hover:bg-gray-100" : "text-gray-300"} disabled:cursor-default`,
+                            className: `mx-auto flex h-8 w-8 items-center justify-center rounded text-xs transition ${isSelected ? "bg-[#1a85a0] font-bold text-white" : isToday ? "border border-indigo-400 text-[#0b1220]" : current && !past ? "text-[#0b1220] hover:bg-gray-100" : "text-gray-300"} disabled:cursor-default`,
                             children: date.getDate()
                         }, key, false, {
                             fileName: "[project]/app/book/page.tsx",
-                            lineNumber: 412,
+                            lineNumber: 400,
                             columnNumber: 13
                         }, this);
                     })
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/book/page.tsx",
-                lineNumber: 398,
+                lineNumber: 385,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/book/page.tsx",
-        lineNumber: 372,
+        lineNumber: 359,
         columnNumber: 5
     }, this);
 }
 _s(Calendar, "c1YPQD/r1+WC2bosw9uyZa75CW4=");
-_c4 = Calendar;
+_c5 = Calendar;
 const emptyForm = {
     lessons: [],
     fullName: "",
@@ -610,7 +591,7 @@ function BookingWidget() {
                             children: "Request sent. Thank you!"
                         }, void 0, false, {
                             fileName: "[project]/app/book/page.tsx",
-                            lineNumber: 584,
+                            lineNumber: 572,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -624,7 +605,7 @@ function BookingWidget() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/book/page.tsx",
-                            lineNumber: 588,
+                            lineNumber: 576,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -634,18 +615,18 @@ function BookingWidget() {
                                 children: "Book another visit"
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.tsx",
-                                lineNumber: 600,
+                                lineNumber: 588,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/book/page.tsx",
-                            lineNumber: 599,
+                            lineNumber: 587,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/book/page.tsx",
-                    lineNumber: 583,
+                    lineNumber: 571,
                     columnNumber: 11
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                     children: [
@@ -654,7 +635,7 @@ function BookingWidget() {
                             onToggle: toggleLesson
                         }, void 0, false, {
                             fileName: "[project]/app/book/page.tsx",
-                            lineNumber: 607,
+                            lineNumber: 595,
                             columnNumber: 15
                         }, this),
                         step === 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -665,7 +646,7 @@ function BookingWidget() {
                                     children: "Let us know how to reach you."
                                 }, void 0, false, {
                                     fileName: "[project]/app/book/page.tsx",
-                                    lineNumber: 613,
+                                    lineNumber: 601,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -679,7 +660,7 @@ function BookingWidget() {
                                             onChange: (e)=>set("fullName", e.target.value)
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.tsx",
-                                            lineNumber: 618,
+                                            lineNumber: 606,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -691,7 +672,7 @@ function BookingWidget() {
                                             onChange: (e)=>set("email", e.target.value)
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.tsx",
-                                            lineNumber: 626,
+                                            lineNumber: 614,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -703,7 +684,7 @@ function BookingWidget() {
                                             onChange: (e)=>set("phone", e.target.value)
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.tsx",
-                                            lineNumber: 635,
+                                            lineNumber: 623,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -714,19 +695,19 @@ function BookingWidget() {
                                             onChange: (e)=>set("organization", e.target.value)
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.tsx",
-                                            lineNumber: 644,
+                                            lineNumber: 632,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/book/page.tsx",
-                                    lineNumber: 617,
+                                    lineNumber: 605,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/book/page.tsx",
-                            lineNumber: 612,
+                            lineNumber: 600,
                             columnNumber: 15
                         }, this),
                         step === 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -737,7 +718,7 @@ function BookingWidget() {
                                     children: "Let us know about your group."
                                 }, void 0, false, {
                                     fileName: "[project]/app/book/page.tsx",
-                                    lineNumber: 658,
+                                    lineNumber: 646,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -750,7 +731,7 @@ function BookingWidget() {
                                             onChange: (e)=>set("grades", e.target.value)
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.tsx",
-                                            lineNumber: 663,
+                                            lineNumber: 651,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -762,7 +743,7 @@ function BookingWidget() {
                                             onChange: (e)=>set("students", e.target.value)
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.tsx",
-                                            lineNumber: 670,
+                                            lineNumber: 658,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -772,19 +753,19 @@ function BookingWidget() {
                                             onChange: (e)=>set("notes", e.target.value)
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.tsx",
-                                            lineNumber: 679,
+                                            lineNumber: 667,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/book/page.tsx",
-                                    lineNumber: 662,
+                                    lineNumber: 650,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/book/page.tsx",
-                            lineNumber: 657,
+                            lineNumber: 645,
                             columnNumber: 15
                         }, this),
                         step === 3 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -795,29 +776,29 @@ function BookingWidget() {
                                     onChange: (key)=>set("date", key)
                                 }, void 0, false, {
                                     fileName: "[project]/app/book/page.tsx",
-                                    lineNumber: 692,
+                                    lineNumber: 680,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "mt-4 text-center text-[9px] font-semibold leading-3 text-[#0b1220]",
+                                    className: "mt-8 text-center text-[10px] font-semibold leading-4 text-[#0b1220]",
                                     children: [
                                         "Your booking is subject to availability.",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/app/book/page.tsx",
-                                            lineNumber: 699,
+                                            lineNumber: 687,
                                             columnNumber: 19
                                         }, this),
                                         "A member of our team will contact you to confirm the date, time, and details."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/book/page.tsx",
-                                    lineNumber: 697,
+                                    lineNumber: 685,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/book/page.tsx",
-                            lineNumber: 691,
+                            lineNumber: 679,
                             columnNumber: 15
                         }, this),
                         error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -826,7 +807,7 @@ function BookingWidget() {
                             children: error
                         }, void 0, false, {
                             fileName: "[project]/app/book/page.tsx",
-                            lineNumber: 707,
+                            lineNumber: 695,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -837,11 +818,11 @@ function BookingWidget() {
                                     children: "Back"
                                 }, void 0, false, {
                                     fileName: "[project]/app/book/page.tsx",
-                                    lineNumber: 718,
+                                    lineNumber: 706,
                                     columnNumber: 17
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
                                     fileName: "[project]/app/book/page.tsx",
-                                    lineNumber: 720,
+                                    lineNumber: 708,
                                     columnNumber: 17
                                 }, this),
                                 step < 3 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PrimaryButton, {
@@ -850,7 +831,7 @@ function BookingWidget() {
                                     children: "Next"
                                 }, void 0, false, {
                                     fileName: "[project]/app/book/page.tsx",
-                                    lineNumber: 724,
+                                    lineNumber: 712,
                                     columnNumber: 17
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PrimaryButton, {
                                     onClick: submit,
@@ -858,24 +839,24 @@ function BookingWidget() {
                                     children: sending ? "Sending..." : "Submit a Request"
                                 }, void 0, false, {
                                     fileName: "[project]/app/book/page.tsx",
-                                    lineNumber: 728,
+                                    lineNumber: 716,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/book/page.tsx",
-                            lineNumber: 716,
+                            lineNumber: 704,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/book/page.tsx",
-                    lineNumber: 604,
+                    lineNumber: 592,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/book/page.tsx",
-                lineNumber: 581,
+                lineNumber: 569,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -884,146 +865,73 @@ function BookingWidget() {
                     step: submitted ? 3 : step
                 }, void 0, false, {
                     fileName: "[project]/app/book/page.tsx",
-                    lineNumber: 739,
+                    lineNumber: 727,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/book/page.tsx",
-                lineNumber: 738,
+                lineNumber: 726,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/book/page.tsx",
-        lineNumber: 579,
+        lineNumber: 567,
         columnNumber: 5
     }, this);
 }
 _s1(BookingWidget, "MEDpWZmg3ObFryB8fyHOGB5UM/o=");
-_c5 = BookingWidget;
+_c6 = BookingWidget;
 function BookingPage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/book/page.tsx",
-                lineNumber: 752,
+                lineNumber: 740,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
                 className: "overflow-x-hidden font-body text-[#0b1220]",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        id: "book",
-                        className: "bg-[#DBF1FA] px-4 py-10 sm:px-6 md:py-14",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(BookingWidget, {}, void 0, false, {
-                            fileName: "[project]/app/book/page.tsx",
-                            lineNumber: 759,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                    id: "book",
+                    className: "bg-[#DBF1FA] px-4 py-10 sm:px-6 md:py-14",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(BookingWidget, {}, void 0, false, {
                         fileName: "[project]/app/book/page.tsx",
-                        lineNumber: 755,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        id: "contact",
-                        className: "bg-white px-4 py-12 sm:px-6 md:py-16",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "mx-auto grid max-w-3xl gap-6 sm:grid-cols-3",
-                            children: contacts.map((c)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    href: c.href,
-                                    className: "flex items-center gap-3 transition hover:opacity-80",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-200 text-[#02304f]",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                width: "14",
-                                                height: "14",
-                                                viewBox: "0 0 24 24",
-                                                fill: "none",
-                                                stroke: "currentColor",
-                                                strokeWidth: "2",
-                                                strokeLinecap: "round",
-                                                "aria-hidden": true,
-                                                children: c.icon
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/book/page.tsx",
-                                                lineNumber: 774,
-                                                columnNumber: 19
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/book/page.tsx",
-                                            lineNumber: 773,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "min-w-0",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block text-[10px] font-bold",
-                                                    children: c.title
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/book/page.tsx",
-                                                    lineNumber: 789,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block truncate text-[8px]",
-                                                    children: c.value
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/book/page.tsx",
-                                                    lineNumber: 793,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/book/page.tsx",
-                                            lineNumber: 788,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, c.title, true, {
-                                    fileName: "[project]/app/book/page.tsx",
-                                    lineNumber: 768,
-                                    columnNumber: 15
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/app/book/page.tsx",
-                            lineNumber: 766,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/app/book/page.tsx",
-                        lineNumber: 762,
-                        columnNumber: 9
+                        lineNumber: 747,
+                        columnNumber: 11
                     }, this)
-                ]
-            }, void 0, true, {
+                }, void 0, false, {
+                    fileName: "[project]/app/book/page.tsx",
+                    lineNumber: 743,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/app/book/page.tsx",
-                lineNumber: 754,
+                lineNumber: 742,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/book/page.tsx",
-                lineNumber: 801,
+                lineNumber: 752,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/book/page.tsx",
-        lineNumber: 751,
+        lineNumber: 739,
         columnNumber: 5
     }, this);
 }
-_c6 = BookingPage;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6;
+_c7 = BookingPage;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7;
 __turbopack_context__.k.register(_c, "OutlineButton");
 __turbopack_context__.k.register(_c1, "PrimaryButton");
 __turbopack_context__.k.register(_c2, "SidePanel");
 __turbopack_context__.k.register(_c3, "LessonStep");
-__turbopack_context__.k.register(_c4, "Calendar");
-__turbopack_context__.k.register(_c5, "BookingWidget");
-__turbopack_context__.k.register(_c6, "BookingPage");
+__turbopack_context__.k.register(_c4, "Chevron");
+__turbopack_context__.k.register(_c5, "Calendar");
+__turbopack_context__.k.register(_c6, "BookingWidget");
+__turbopack_context__.k.register(_c7, "BookingPage");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
@@ -1041,6 +949,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 ;
+// TODO: replace these two with the real social pages
+const FACEBOOK_URL = "https://www.facebook.com/vrlearning";
+const LINKEDIN_URL = "https://www.linkedin.com/company/vr-learning";
 const footerColumns = [
     {
         title: "Partners",
@@ -1054,8 +965,8 @@ const footerColumns = [
                 href: "https://home.tapeducation.ca/"
             },
             {
-                label: "Pop-up VR",
-                href: "https://popupvr.com/"
+                label: "Pop-Up VR",
+                href: "https://popupvr.ca/"
             },
             {
                 label: "VRCore Education",
@@ -1068,11 +979,11 @@ const footerColumns = [
         links: [
             {
                 label: "Privacy policy",
-                href: "/"
+                href: "/privacy"
             },
             {
                 label: "Terms of service",
-                href: "/"
+                href: "/terms"
             }
         ]
     },
@@ -1081,138 +992,294 @@ const footerColumns = [
         links: [
             {
                 label: "info@vrlearning.ca",
-                href: "/"
+                href: "mailto:info@vrlearning.ca"
             },
             {
                 label: "Book Now",
-                href: "/"
+                href: "/book"
             }
         ]
     }
 ];
+const socials = [
+    {
+        label: "Email info@vrlearning.ca",
+        href: "mailto:info@vrlearning.ca",
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    d: "M4 6h16v12H4z",
+                    strokeLinejoin: "round"
+                }, void 0, false, {
+                    fileName: "[project]/components/Footer.tsx",
+                    lineNumber: 40,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    d: "M4 7l8 6 8-6",
+                    strokeLinejoin: "round"
+                }, void 0, false, {
+                    fileName: "[project]/components/Footer.tsx",
+                    lineNumber: 41,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0))
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Footer.tsx",
+            lineNumber: 39,
+            columnNumber: 7
+        }, ("TURBOPACK compile-time value", void 0))
+    },
+    {
+        label: "Instagram @vr_learn",
+        href: "https://www.instagram.com/vr_learn",
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                    x: "4",
+                    y: "4",
+                    width: "16",
+                    height: "16",
+                    rx: "4.5"
+                }, void 0, false, {
+                    fileName: "[project]/components/Footer.tsx",
+                    lineNumber: 51,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "12",
+                    cy: "12",
+                    r: "3.6"
+                }, void 0, false, {
+                    fileName: "[project]/components/Footer.tsx",
+                    lineNumber: 52,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "16.8",
+                    cy: "7.2",
+                    r: "0.6",
+                    fill: "currentColor"
+                }, void 0, false, {
+                    fileName: "[project]/components/Footer.tsx",
+                    lineNumber: 53,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0))
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Footer.tsx",
+            lineNumber: 50,
+            columnNumber: 7
+        }, ("TURBOPACK compile-time value", void 0))
+    }
+];
 function Footer() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-        className: "relative overflow-hidden bg-[#0f1424] font-body text-white pb-[40px]",
+        className: "relative overflow-hidden bg-[#0f1424] font-body text-white",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 "aria-hidden": true,
                 className: "pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_80%_at_100%_0%,rgba(40,90,130,0.55),transparent_70%),radial-gradient(ellipse_40%_60%_at_80%_110%,rgba(150,60,90,0.45),transparent_70%)]"
             }, void 0, false, {
                 fileName: "[project]/components/Footer.tsx",
-                lineNumber: 34,
+                lineNumber: 75,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative mx-auto flex max-w-[1200px] flex-col gap-8 px-6 py-10 lg:flex-row lg:items-start lg:justify-between lg:px-10 lg:py-8",
+                className: "relative mx-auto max-w-[1280px] px-6 pt-12 md:px-10 md:pt-16",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-col gap-4",
+                        className: "grid gap-12 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-20",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/",
-                                className: "block shrink-0",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    src: "/footer3.png",
-                                    alt: "VR Learning",
-                                    width: 337,
-                                    height: 73,
-                                    className: "h-auto w-[220px]"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Footer.tsx",
-                                    lineNumber: 42,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/components/Footer.tsx",
-                                lineNumber: 41,
-                                columnNumber: 11
-                            }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "/",
+                                        className: "block w-fit",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            src: "/footer3.png",
+                                            alt: "VR Learning",
+                                            width: 337,
+                                            height: 73,
+                                            className: "h-auto w-[240px]"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Footer.tsx",
+                                            lineNumber: 85,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Footer.tsx",
+                                        lineNumber: 84,
+                                        columnNumber: 13
+                                    }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "font-display text-xl font-normal md:text-[22px]",
+                                        className: "font-display mt-6 text-xl font-normal md:text-2xl",
                                         children: "Learning Without Limits"
                                     }, void 0, false, {
                                         fileName: "[project]/components/Footer.tsx",
-                                        lineNumber: 52,
+                                        lineNumber: 94,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "mt-2 max-w-[260px] text-xs leading-[14px] tracking-wide font-[family-name:Verdana]",
+                                        className: "mt-3 max-w-[300px] text-sm leading-6 tracking-wide text-gray-300 font-[family-name:Verdana]",
                                         children: "Take students beyond the classroom with affordable VR field trips."
                                     }, void 0, false, {
                                         fileName: "[project]/components/Footer.tsx",
-                                        lineNumber: 55,
+                                        lineNumber: 97,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Footer.tsx",
-                                lineNumber: 51,
+                                lineNumber: 83,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "grid grid-cols-2 gap-x-10 gap-y-10 sm:grid-cols-4 lg:gap-x-14",
+                                children: [
+                                    footerColumns.map((col)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: "font-display text-sm font-bold tracking-wide",
+                                                    children: col.title
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Footer.tsx",
+                                                    lineNumber: 106,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "mt-2 block h-[2px] w-6 rounded bg-[#1a85a0]"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Footer.tsx",
+                                                    lineNumber: 109,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                    className: "mt-4 space-y-2.5 text-[13px] tracking-wide text-gray-300",
+                                                    children: col.links.map((l)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                                href: l.href,
+                                                                className: "whitespace-nowrap transition hover:text-white hover:underline font-[family-name:Verdana]",
+                                                                children: l.label
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/Footer.tsx",
+                                                                lineNumber: 113,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        }, l.label, false, {
+                                                            fileName: "[project]/components/Footer.tsx",
+                                                            lineNumber: 112,
+                                                            columnNumber: 21
+                                                        }, this))
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Footer.tsx",
+                                                    lineNumber: 110,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, col.title, true, {
+                                            fileName: "[project]/components/Footer.tsx",
+                                            lineNumber: 105,
+                                            columnNumber: 15
+                                        }, this)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                className: "font-display text-sm font-bold tracking-wide",
+                                                children: "Follow Us"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Footer.tsx",
+                                                lineNumber: 127,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "mt-2 block h-[2px] w-6 rounded bg-[#1a85a0]"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Footer.tsx",
+                                                lineNumber: 130,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                className: "mt-4 grid w-fit grid-cols-2 gap-3",
+                                                children: socials.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                            href: s.href,
+                                                            "aria-label": s.label,
+                                                            title: s.label,
+                                                            target: s.href.startsWith("http") ? "_blank" : undefined,
+                                                            rel: "noopener noreferrer",
+                                                            className: "flex h-11 w-11 items-center justify-center rounded-full border border-white/25 bg-white/10 text-white transition hover:border-white hover:bg-white hover:text-[#0f1424]",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                width: "20",
+                                                                height: "20",
+                                                                viewBox: "0 0 24 24",
+                                                                fill: "none",
+                                                                stroke: "currentColor",
+                                                                strokeWidth: "1.8",
+                                                                strokeLinecap: "round",
+                                                                "aria-hidden": true,
+                                                                children: s.icon
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/Footer.tsx",
+                                                                lineNumber: 142,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Footer.tsx",
+                                                            lineNumber: 134,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    }, s.label, false, {
+                                                        fileName: "[project]/components/Footer.tsx",
+                                                        lineNumber: 133,
+                                                        columnNumber: 19
+                                                    }, this))
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Footer.tsx",
+                                                lineNumber: 131,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Footer.tsx",
+                                        lineNumber: 126,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Footer.tsx",
+                                lineNumber: 103,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Footer.tsx",
-                        lineNumber: 40,
+                        lineNumber: 81,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-3 lg:gap-x-8",
-                        children: footerColumns.map((col)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-[13px] font-semibold tracking-wide",
-                                        children: col.title
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/Footer.tsx",
-                                        lineNumber: 65,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                        className: "mt-3 space-y-1 text-[12px] tracking-wide text-gray-100",
-                                        children: col.links.map((l)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    href: l.href,
-                                                    className: "transition hover:text-white hover:underline font-[family-name:Verdana]",
-                                                    children: l.label
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/Footer.tsx",
-                                                    lineNumber: 71,
-                                                    columnNumber: 21
-                                                }, this)
-                                            }, l.label, false, {
-                                                fileName: "[project]/components/Footer.tsx",
-                                                lineNumber: 70,
-                                                columnNumber: 19
-                                            }, this))
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/Footer.tsx",
-                                        lineNumber: 68,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, col.title, true, {
-                                fileName: "[project]/components/Footer.tsx",
-                                lineNumber: 64,
-                                columnNumber: 13
-                            }, this))
-                    }, void 0, false, {
+                        className: "mt-12 border-t border-white/10 py-6 text-center text-xs text-gray-400 md:mt-14 md:text-left",
+                        children: [
+                            "© ",
+                            new Date().getFullYear(),
+                            " VR Learning. All rights reserved."
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/components/Footer.tsx",
-                        lineNumber: 62,
+                        lineNumber: 163,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Footer.tsx",
-                lineNumber: 39,
+                lineNumber: 80,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Footer.tsx",
-        lineNumber: 33,
-        columnNumber: 6
+        lineNumber: 73,
+        columnNumber: 5
     }, this);
 }
 _c = Footer;
@@ -1266,16 +1333,16 @@ function Header() {
                         className: "h-[40px] w-auto"
                     }, void 0, false, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 18,
+                        lineNumber: 17,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/Header.tsx",
-                    lineNumber: 17,
+                    lineNumber: 16,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                    className: "font-body hidden items-center gap-4 text-sm font-medium text-white md:flex",
+                    className: "font-body hidden items-center gap-10 text-sm font-medium text-white md:flex",
                     children: navLinks.map((l)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: l.href,
@@ -1283,17 +1350,17 @@ function Header() {
                                 children: l.label
                             }, void 0, false, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 31,
+                                lineNumber: 30,
                                 columnNumber: 15
                             }, this)
                         }, l.href, false, {
                             fileName: "[project]/components/Header.tsx",
-                            lineNumber: 30,
+                            lineNumber: 29,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/Header.tsx",
-                    lineNumber: 28,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1301,7 +1368,7 @@ function Header() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             href: "/book",
-                            className: "font-body inline-flex h-9 items-center justify-center rounded-[4px] bg-[#111827] px-6 text-sm font-medium tracking-wide text-white transition-colors hover:bg-black md:h-[26px] md:w-[150px] md:px-0",
+                            className: "font-body hidden items-center justify-center rounded-[4px] bg-[#111827] text-sm font-medium tracking-wide text-white transition-colors hover:bg-black md:inline-flex md:h-[26px] md:w-[150px]",
                             children: "Get Started"
                         }, void 0, false, {
                             fileName: "[project]/components/Header.tsx",
@@ -1367,23 +1434,41 @@ function Header() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                     className: "absolute inset-x-0 top-full z-50 flex flex-col bg-[#0b1220] px-4 py-2 shadow-lg sm:px-8",
-                                    children: navLinks.map((l)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                            className: "border-b border-white/10 last:border-b-0",
+                                    children: [
+                                        navLinks.map((l)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                className: "border-b border-white/10",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: l.href,
+                                                    className: "block py-4 text-lg font-semibold text-white transition-opacity hover:opacity-70",
+                                                    children: l.label
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Header.tsx",
+                                                    lineNumber: 84,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, l.href, false, {
+                                                fileName: "[project]/components/Header.tsx",
+                                                lineNumber: 83,
+                                                columnNumber: 17
+                                            }, this)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                            className: "py-4",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                href: l.href,
-                                                className: "block py-4 text-lg font-semibold text-white transition-opacity hover:opacity-70",
-                                                children: l.label
+                                                href: "/book",
+                                                className: "font-body flex h-11 w-full items-center justify-center rounded-[4px] bg-[#111827] text-base font-semibold tracking-wide text-white ring-1 ring-white/15 transition-colors hover:bg-black",
+                                                children: "Get Started"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Header.tsx",
-                                                lineNumber: 84,
-                                                columnNumber: 19
+                                                lineNumber: 95,
+                                                columnNumber: 17
                                             }, this)
-                                        }, l.href, false, {
+                                        }, void 0, false, {
                                             fileName: "[project]/components/Header.tsx",
-                                            lineNumber: 83,
-                                            columnNumber: 17
-                                        }, this))
-                                }, void 0, false, {
+                                            lineNumber: 94,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/components/Header.tsx",
                                     lineNumber: 81,
                                     columnNumber: 13
@@ -1397,18 +1482,18 @@ function Header() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/Header.tsx",
-                    lineNumber: 39,
+                    lineNumber: 38,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/Header.tsx",
-            lineNumber: 15,
+            lineNumber: 14,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Header.tsx",
-        lineNumber: 14,
+        lineNumber: 13,
         columnNumber: 5
     }, this);
 }

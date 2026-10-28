@@ -15,7 +15,7 @@ const lessons = [
     id: "iss",
     title: "ISS:",
     subtitle: "Curiosity in Orbit",
-    grades: "4-12",
+    grades: "3-12",
     image: "/Lesson1.png",
   },
   {
@@ -29,7 +29,7 @@ const lessons = [
     id: "particle-model",
     title: "Atoms & Molecules:",
     subtitle: "The Particle Model of Matter",
-    grades: "5-7",
+    grades: "5-8",
     image: "/Lesson3.png",
   },
   {
@@ -52,39 +52,6 @@ const PANEL_TEXT =
   "Immersive VR lessons that bring complex concepts to life, from planets to atoms.";
 
 const BOOKING_EMAIL = "info@vrlearning.ca";
-
-const contacts = [
-  {
-    title: "Message Us",
-    value: "info@vrlearning.ca",
-    href: "mailto:info@vrlearning.ca",
-    icon: (
-      <path
-        d="M4 6h16v12H4zM4 7l8 6 8-6"
-        strokeLinejoin="round"
-      />
-    ),
-  },
-  {
-    title: "Instagram",
-    value: "vr_learn",
-    href: "https://www.instagram.com/vr_learn",
-    icon: (
-      <path d="M6 9v9M6 6v.01M10 18v-9M10 13c0-2 1.5-4 4-4s4 1.5 4 4v5" />
-    ),
-  },
-  {
-    title: "Address",
-    value: "Toronto, Ontario",
-    href: "https://www.google.com/maps/place/Toronto,+ON,+Canada",
-    icon: (
-      <>
-        <path d="M12 21s-6-5.2-6-10a6 6 0 1112 0c0 4.8-6 10-6 10z" />
-        <circle cx="12" cy="11" r="2" />
-      </>
-    ),
-  },
-];
 
 const WEEKDAYS = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"];
 
@@ -184,13 +151,13 @@ function SidePanel({ step }: { step: number }) {
         })}
       </ol>
 
-      {/* logo */}
+      {/* logo: bottom-right corner, equal distance from the right and bottom edges */}
       <Image
         src="/footer1.png"
         alt="VR Learning"
-        width={64}
-        height={60}
-        className="absolute bottom-[16%] right-4 h-auto w-16 mr-[10px]"
+        width={72}
+        height={68}
+        className="absolute bottom-5 right-5 h-auto w-[72px]"
       />
     </div>
   );
@@ -225,12 +192,12 @@ function LessonStep({
                 onToggle(l.id);
               }
             }}
-            className={`cursor-pointer overflow-hidden rounded-[10px] border bg-white shadow-[0_2px_6px_rgba(0,0,0,0.18)] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#1a85a0] ${
+            className={`flex h-full cursor-pointer flex-col overflow-hidden rounded-[10px] border bg-white shadow-[0_2px_6px_rgba(0,0,0,0.18)] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#1a85a0] ${
               active ? "border-[#0b1220]" : "border-gray-300"
             }`}
           >
             {/* image */}
-            <div className="relative h-[84px] w-full md:h-[100px]">
+            <div className="relative h-[84px] w-full shrink-0 md:h-[100px]">
               <Image
                 src={l.image}
                 alt=""
@@ -264,8 +231,8 @@ function LessonStep({
               </span>
             </div>
 
-            {/* text */}
-            <div className="font-display px-2 pb-2.5 pt-2 text-center">
+            {/* text: grows so every "Read more" bar sits at the same level */}
+            <div className="font-display flex flex-1 flex-col items-center justify-center px-2 pb-2.5 pt-2 text-center">
               <p
                 className={`text-[10px] leading-[15px] md:text-[11px] ${
                   active ? "text-black" : "text-[#6b7280]"
@@ -289,7 +256,7 @@ function LessonStep({
             <Link
               href="/lessons"
               onClick={(e) => e.stopPropagation()}
-              className={`font-display block py-2 text-center text-[10px] font-bold text-white md:text-[11px] ${
+              className={`font-display mt-auto block shrink-0 py-2 text-center text-[10px] font-bold text-white md:text-[11px] ${
                 active ? "bg-[#111827]" : "bg-[#9ca3af]"
               }`}
             >
@@ -315,6 +282,26 @@ function toKey(d: Date) {
     2,
     "0"
   )}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
+/* chevron arrows drawn as SVG so they don't depend on the font */
+function Chevron({ direction }: { direction: "left" | "right" }) {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className="h-3.5 w-3.5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <polyline
+        points={direction === "left" ? "15 5 8 12 15 19" : "9 5 16 12 9 19"}
+      />
+    </svg>
+  );
 }
 
 function Calendar({
@@ -369,19 +356,19 @@ function Calendar({
     (year === today.getFullYear() && month > today.getMonth());
 
   return (
-    <div className="mx-auto max-w-[260px]">
-      <div className="flex items-center justify-between rounded-md border border-gray-100 px-2 py-1 shadow-sm">
+    <div className="mx-auto w-full max-w-[320px]">
+      <div className="flex items-center justify-between rounded-md border border-gray-100 px-2.5 py-1.5 shadow-sm">
         <button
           type="button"
           aria-label="Previous month"
           disabled={!canGoPrev}
           onClick={() => setView(new Date(year, month - 1, 1))}
-          className="flex h-5 w-5 items-center justify-center rounded border border-gray-200 text-gray-500 disabled:opacity-30"
+          className="flex h-7 w-7 items-center justify-center rounded border border-gray-200 text-gray-500 transition hover:bg-gray-50 disabled:opacity-30 disabled:hover:bg-transparent"
         >
-          &lsaquo;
+          <Chevron direction="left" />
         </button>
 
-        <span className="text-[10px] font-semibold text-gray-600">
+        <span className="text-xs font-semibold text-gray-600">
           {MONTHS[month]} {year}
         </span>
 
@@ -389,15 +376,15 @@ function Calendar({
           type="button"
           aria-label="Next month"
           onClick={() => setView(new Date(year, month + 1, 1))}
-          className="flex h-5 w-5 items-center justify-center rounded border border-gray-200 text-gray-500"
+          className="flex h-7 w-7 items-center justify-center rounded border border-gray-200 text-gray-500 transition hover:bg-gray-50"
         >
-          &rsaquo;
+          <Chevron direction="right" />
         </button>
       </div>
 
-      <div className="mt-3 grid grid-cols-7 gap-y-1 text-center text-[9px]">
+      <div className="mt-4 grid grid-cols-7 gap-y-1.5 text-center text-[10px]">
         {WEEKDAYS.map((w) => (
-          <span key={w} className="py-1 font-semibold text-gray-400">
+          <span key={w} className="py-1 text-[11px] font-semibold text-gray-400">
             {w}
           </span>
         ))}
@@ -405,8 +392,9 @@ function Calendar({
         {cells.map(({ date, current }) => {
           const key = toKey(date);
           const past = date < today;
-          const isSelected = value === key;
-          const isToday = toKey(today) === key;
+          // highlight only days of the month being shown
+          const isSelected = current && value === key;
+          const isToday = current && toKey(today) === key;
 
           return (
             <button
@@ -415,7 +403,7 @@ function Calendar({
               disabled={past || !current}
               onClick={() => onChange(key)}
               aria-pressed={isSelected}
-              className={`mx-auto flex h-6 w-6 items-center justify-center rounded text-[10px] transition ${
+              className={`mx-auto flex h-8 w-8 items-center justify-center rounded text-xs transition ${
                 isSelected
                   ? "bg-[#1a85a0] font-bold text-white"
                   : isToday
@@ -694,7 +682,7 @@ function BookingWidget() {
                   onChange={(key) => set("date", key)}
                 />
 
-                <p className="mt-4 text-center text-[9px] font-semibold leading-3 text-[#0b1220]">
+                <p className="mt-8 text-center text-[10px] font-semibold leading-4 text-[#0b1220]">
                   Your booking is subject to availability.
                   <br />
                   A member of our team will contact you to confirm the date,
@@ -758,46 +746,9 @@ export default function BookingPage() {
         >
           <BookingWidget />
         </section>
-
-        <section
-          id="contact"
-          className="bg-white px-4 py-12 sm:px-6 md:py-16"
-        >
-          <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-3">
-            {contacts.map((c) => (
-              <Link
-                key={c.title}
-                href={c.href}
-                className="flex items-center gap-3 transition hover:opacity-80"
-              >
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-200 text-[#02304f]">
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    aria-hidden
-                  >
-                    {c.icon}
-                  </svg>
-                </span>
-
-                <span className="min-w-0">
-                  <span className="block text-[10px] font-bold">
-                    {c.title}
-                  </span>
-
-                  <span className="block truncate text-[8px]">{c.value}</span>
-                </span>
-              </Link>
-            ))}
-          </div>
-        </section>
       </main>
 
+      {/* Contact + social icons now live in the footer (see ContactIcons) */}
       <Footer />
     </>
   );

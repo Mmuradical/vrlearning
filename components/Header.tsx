@@ -5,7 +5,6 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/lessons", label: "Lessons" },
   { href: "/pricing", label: "Pricing" },
-  
 ];
 
 // components/Header.tsx
@@ -25,7 +24,7 @@ export default function Header() {
         </Link>
 
         {/* Links (desktop) */}
-        <ul className="font-body hidden items-center gap-4 text-sm font-medium text-white md:flex">
+        <ul className="font-body hidden items-center gap-10 text-sm font-medium text-white md:flex">
           {navLinks.map((l) => (
             <li key={l.href}>
               <Link href={l.href} className="transition-opacity hover:opacity-70">
@@ -37,14 +36,15 @@ export default function Header() {
 
         {/* Right side */}
         <div className="flex items-center justify-self-end gap-3">
+          {/* Get Started (desktop only) */}
           <Link
             href="/book"
-            className="font-body inline-flex h-9 items-center justify-center rounded-[4px] bg-[#111827] px-6 text-sm font-medium tracking-wide text-white transition-colors hover:bg-black md:h-[26px] md:w-[150px] md:px-0"
+            className="font-body hidden items-center justify-center rounded-[4px] bg-[#111827] text-sm font-medium tracking-wide text-white transition-colors hover:bg-black md:inline-flex md:h-[26px] md:w-[150px]"
           >
             Get Started
           </Link>
 
-          {/* Mobile menu (без JS: <details>) */}
+          {/* Mobile menu (without JS: <details>) */}
           <details className="group md:hidden">
             <summary
               aria-label="Open menu"
@@ -80,7 +80,7 @@ export default function Header() {
 
             <ul className="absolute inset-x-0 top-full z-50 flex flex-col bg-[#0b1220] px-4 py-2 shadow-lg sm:px-8">
               {navLinks.map((l) => (
-                <li key={l.href} className="border-b border-white/10 last:border-b-0">
+                <li key={l.href} className="border-b border-white/10">
                   <Link
                     href={l.href}
                     className="block py-4 text-lg font-semibold text-white transition-opacity hover:opacity-70"
@@ -89,6 +89,16 @@ export default function Header() {
                   </Link>
                 </li>
               ))}
+
+              {/* Get Started */}
+              <li className="py-4">
+                <Link
+                  href="/book"
+                  className="font-body flex h-11 w-full items-center justify-center rounded-[4px] bg-[#111827] text-base font-semibold tracking-wide text-white ring-1 ring-white/15 transition-colors hover:bg-black"
+                >
+                  Get Started
+                </Link>
+              </li>
             </ul>
           </details>
         </div>

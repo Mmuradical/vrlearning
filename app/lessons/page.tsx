@@ -1,7 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter, useSearchParams } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -56,7 +58,7 @@ const lessons: Lesson[] = [
     subtitle: "Curiosity in Orbit",
     description:
       "Step aboard the International Space Station to explore how astronauts and scientists experiment, problem-solve, and conduct research in orbit.",
-    grades: "4-12",
+    grades: "3-12",
     image: "/Lesson1.png",
     imageAlt: "International Space Station orbiting Earth",
     imageSide: "left",
@@ -78,13 +80,14 @@ const lessons: Lesson[] = [
       {
         title: "ISS Tour",
         text: "Acquaint yourself with the different modules that make up the ISS. As students explore the ISS and partake in experiments, they will learn about the purpose of each module in the life and work of astronauts, including manipulating objects in micro gravity!",
-        objective: "ISS Tour & Observations",
-        description:
-          "Students will observe the key components of various sections of the ISS and where they are found in the overall layout.",
       },
       {
         title: "Experiments on the ISS",
         text: "Take part in simplified versions of experiments done on the ISS, learning how microgravity plays a role in developing our understanding of science and engineering both in space and on Earth.",
+        // Objective / Description now sits under the Experiments section
+        objective: "ISS Tour & Observations",
+        description:
+          "Students will observe the key components of various sections of the ISS and where they are found in the overall layout.",
       },
     ],
   },
@@ -158,7 +161,7 @@ const lessons: Lesson[] = [
     subtitle: "The Particle Model of Matter",
     description:
       "Go beyond the microscopic level to explore how particles behave and how the particle model helps explain the properties of different substances.",
-    grades: "5-7",
+    grades: "5-8",
     image: "/Lesson3.png",
     imageAlt: "Colorful molecule model",
     imageSide: "right",
@@ -172,7 +175,7 @@ const lessons: Lesson[] = [
     intro: [
       "Discover what everything is made of through an immersive exploration of the particle model of matter. Students will examine how particles behave in solids, liquids, and gases, from the crystal lattice of salt to an interactive chamber demonstrating gas behaviour under different conditions. They'll also explore the building blocks of atoms and put their knowledge into practice by constructing atoms using protons, neutrons, and electrons.",
     ],
-    gradeList: range(5, 7),
+    gradeList: range(5, 8),
     skills: [
       "Cause and Effect",
       "Critical Thinking",
@@ -350,9 +353,9 @@ function LessonDetail({
   return (
     <article className="mx-auto max-w-3xl rounded-xl bg-white px-6 py-10 shadow-sm md:px-14 md:py-14">
       <nav className="text-xs font-medium md:text-[11px]">
-        <button type="button" onClick={onBack} className="hover:underline">
+        <Link href="/" className="hover:underline">
           Home
-        </button>
+        </Link>
         {" > "}
         <button type="button" onClick={onBack} className="hover:underline">
           Explore
@@ -366,7 +369,20 @@ function LessonDetail({
         onClick={onBack}
         className="mt-4 inline-flex items-center gap-2 rounded-md border border-[#0b1220] px-5 py-2 text-sm font-medium transition hover:bg-gray-100 md:text-xs"
       >
-        <span aria-hidden>&lsaquo;</span> Lessons
+        
+        <svg
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+          className="h-3 w-3"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <polyline points="15 5 8 12 15 19" />
+        </svg>
+        Lessons
       </button>
 
       <p className="mt-5 text-[11px] font-bold uppercase tracking-wide text-[#0e8aa8] md:text-[10px]">
@@ -463,19 +479,23 @@ function LessonDetail({
 }
 
 /* ---------------------------- PAGE ---------------------------- */
+/* The open lesson lives in the URL (/lessons?lesson=iss), so clicking
+   "Lessons" in the header (/lessons) always returns to the main list. */
 
-export default function LessonsPage() {
-  const [activeSlug, setActiveSlug] = useState<string | null>(null);
+function LessonsContent() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+
+  const activeSlug = searchParams.get("lesson");
   const active = lessons.find((l) => l.slug === activeSlug) ?? null;
 
-  const open = (slug: string) => {
-    setActiveSlug(slug);
+  // jump to the top whenever the list <-> detail view changes
+  useEffect(() => {
     window.scrollTo({ top: 0 });
-  };
-  const back = () => {
-    setActiveSlug(null);
-    window.scrollTo({ top: 0 });
-  };
+  }, [activeSlug]);
+
+  const open = (slug: string) => router.push(`/lessons?lesson=${slug}`);
+  const back = () => router.push("/lessons");
 
   return (
     <>
@@ -509,7 +529,7 @@ export default function LessonsPage() {
                 structure.
               </p>
               <p className="font-display mt-6 text-sm font-extrabold md:text-xs">
-                Designed for Grades 4–12.
+                Designed for Grades 3–12.
               </p>
             </section>
 
@@ -537,5 +557,14 @@ export default function LessonsPage() {
 
       <Footer />
     </>
+  );
+}
+
+export default function LessonsPage() {
+  // useSearchParams needs a Suspense boundary in the Next.js app router
+  return (
+    <Suspense fallback={null}>
+      <LessonsContent />
+    </Suspense>
   );
 }
