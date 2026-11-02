@@ -1,10 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// TODO: replace these two with the real social pages
-const FACEBOOK_URL = "https://www.facebook.com/vrlearning";
-const LINKEDIN_URL = "https://www.linkedin.com/company/vr-learning";
-
 const footerColumns = [
   {
     title: "Partners",
@@ -33,19 +29,8 @@ const footerColumns = [
 
 const socials = [
   {
-    label: "Email info@vrlearning.ca",
-    href: "mailto:info@vrlearning.ca",
-    icon: (
-      <>
-        <path d="M4 6h16v12H4z" strokeLinejoin="round" />
-        <path d="M4 7l8 6 8-6" strokeLinejoin="round" />
-      </>
-    ),
-  },
- 
-  {
     label: "Instagram @vr_learn",
-    href: "https://www.instagram.com/vr_learn",
+    href: "https://www.instagram.com/vr_learn/",
     icon: (
       <>
         <rect x="4" y="4" width="16" height="16" rx="4.5" />
@@ -54,18 +39,6 @@ const socials = [
       </>
     ),
   },
-  // {
-  //   label: "LinkedIn",
-  //   href: LINKEDIN_URL,
-  //   icon: (
-  //     <>
-  //       <path d="M6 9v9" />
-  //       <path d="M6 6v.01" />
-  //       <path d="M10 18v-9" />
-  //       <path d="M10 13c0-2 1.5-4 4-4s4 1.5 4 4v5" />
-  //     </>
-  //   ),
-  // },
 ];
 
 export default function Footer() {
@@ -108,16 +81,30 @@ export default function Footer() {
                 </h3>
                 <span className="mt-2 block h-[2px] w-6 rounded bg-[#1a85a0]" />
                 <ul className="mt-4 space-y-2.5 text-[13px] tracking-wide text-gray-300">
-                  {col.links.map((l) => (
-                    <li key={l.label}>
-                      <Link
-                        href={l.href}
-                        className="whitespace-nowrap transition hover:text-white hover:underline font-[family-name:Verdana]"
-                      >
-                        {l.label}
-                      </Link>
-                    </li>
-                  ))}
+                  {col.links.map((l) => {
+                    const linkClass =
+                      "whitespace-nowrap transition hover:text-white hover:underline font-[family-name:Verdana]";
+
+                    return (
+                      <li key={l.label}>
+                        {l.href ? (
+                          l.href.startsWith("mailto:") ? (
+                            <a href={l.href} className={linkClass}>
+                              {l.label}
+                            </a>
+                          ) : (
+                            <Link href={l.href} className={linkClass}>
+                              {l.label}
+                            </Link>
+                          )
+                        ) : (
+                          <span className="whitespace-nowrap font-[family-name:Verdana]">
+                            {l.label}
+                          </span>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             ))}
@@ -128,14 +115,14 @@ export default function Footer() {
                 Follow Us
               </h3>
               <span className="mt-2 block h-[2px] w-6 rounded bg-[#1a85a0]" />
-              <ul className="mt-4 grid w-fit grid-cols-2 gap-3">
+              <ul className="mt-4 flex w-fit gap-3">
                 {socials.map((s) => (
                   <li key={s.label}>
                     <a
                       href={s.href}
                       aria-label={s.label}
                       title={s.label}
-                      target={s.href.startsWith("http") ? "_blank" : undefined}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex h-11 w-11 items-center justify-center rounded-full border border-white/25 bg-white/10 text-white transition hover:border-white hover:bg-white hover:text-[#0f1424]"
                     >

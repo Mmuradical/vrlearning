@@ -140,21 +140,21 @@ export default function Home() {
 
         {/* HEADING */}
         <section className="bg-white">
-          <h2 className="mx-auto max-w-[1280px] px-6 pb-2 pt-12 text-center font-display text-2xl font-extrabold leading-[1.3] md:px-10 md:pt-16 md:text-3xl">
+          <h2 className="mx-auto mt-6 max-w-[1280px] px-6 pb-2 pt-12 text-center font-display text-2xl font-extrabold leading-[1.3] md:px-10 md:pt-16 md:text-3xl">
             Transform Your Space Into an Immersive Field Trip
           </h2>
         </section>
 
         {/* KEY NUMBERS */}
         <section className="bg-white">
-          <div className="mt-6 mb-12 mx-auto grid max-w-[1280px] gap-8 px-6 py-8 text-center md:grid-cols-2 md:gap-10 md:px-10 md:py-12">
+          <div className="mx-auto grid max-w-[1280px] gap-8 px-6 py-8 text-center md:grid-cols-2 md:gap-10 md:px-10 md:py-12">
             <div>
               <p className="font-display text-3xl font-extrabold md:text-4xl">45 to 60 min</p>
               <p className="mt-2 text-base text-sky-700 md:text-lg">immersive VR session length</p>
             </div>
             <div>
               <p className="font-display text-3xl font-extrabold md:text-4xl">Up to 30 students</p>
-              <p className="mt-2 text-base text-sky-700 md:text-lg">in one free-roam experience</p>
+              <p className="mt-2 mb-12 text-base text-sky-700 md:text-lg">in one free-roam experience</p>
             </div>
           </div>
         </section>
@@ -166,7 +166,7 @@ export default function Home() {
               <div className="relative aspect-square w-full overflow-hidden rounded-lg bg-gray-200">
                 {/* Put a VR Core screenshot / in-headset still at /public/vr-headset-screenshot.png */}
                 <Image
-                  src="/group.png"
+                  src="/wave.png"
                   alt="In-headset view of a VR Core learning experience"
                   fill
                   priority
@@ -229,7 +229,7 @@ export default function Home() {
         </section>
 
         {/* VIDEO CTA */}
-        <section className=" mt-6 mb-12 bg-white px-4 py-12 sm:px-6 md:px-10 md:py-16">
+        <section className="mt-12 mb-12 bg-white px-4 py-12 sm:px-6 md:px-10 md:py-16">
           <div className="mx-auto grid max-w-[1280px] items-center gap-5 rounded-2xl bg-[linear-gradient(90deg,#0b1a2e_0%,#1488a8_30%,#0b1a2e_100%)] p-4 shadow-lg md:grid-cols-[1.35fr_1fr] md:gap-10 md:p-6">
             <div className="aspect-video w-full overflow-hidden rounded-xl bg-gray-300">
               <video
@@ -286,7 +286,7 @@ export default function Home() {
         </section>
 
         {/* KIDS LEARN BETTER */}
-        <section className="mt-6 mb-12 bg-white px-6 py-12 md:px-10 md:py-16">
+        <section className="mt-12 mb-12 bg-white px-6 py-12 md:px-10 md:py-16">
           <div className="mx-auto max-w-[1280px] text-center">
             <h2 className="font-display text-2xl font-extrabold md:text-3xl">
               Kids Learn Better in VR
@@ -316,7 +316,7 @@ export default function Home() {
         </section>
 
         {/* SPACE BANNER */}
-        <section className="mt-12 mb-12 bg-white px-4 pb-12 sm:px-6 md:px-10 md:pb-16">
+        <section className="mb-12 bg-white px-4 pb-12 sm:px-6 md:px-10 md:pb-16">
           <div className="relative mx-auto h-[340px] w-full max-w-[1280px] overflow-hidden rounded-xl md:h-[340px]">
             <Image
               src="/Moon-Boy2.png"
